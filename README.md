@@ -1,1 +1,225 @@
 # ranime
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Favorite Person RANIME Y❤️UNESS</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Georgia', serif;
+scroll-behavior:smooth;
+}
+body{
+background:#2b0000;
+color:white;
+overflow-x:hidden;
+}
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:60px 20px;
+text-align:center;
+transition:1.5s;
+}
+h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+p{
+max-width:800px;
+font-size:1.2rem;
+line-height:1.8;
+}
+.red{
+background:linear-gradient(#220000,#5a0000);
+}
+.pink{
+background:linear-gradient(#7a0038,#ff7eb6);
+}
+.gold{
+background:linear-gradient(#6b5200,#c9a227);
+}
+.purple{
+background:linear-gradient(#240033,#6d28d9);
+}
+.blue{
+background:linear-gradient(#000814,#003566);
+}
+.forever{
+background:linear-gradient(#f5f5f5,#d4af37);
+color:#111;
+}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+width:100%;
+max-width:1200px;
+margin-top:40px;
+}
+.gallery img{
+width:100%;
+border-radius:20px;
+transition:.4s;
+cursor:pointer;
+}
+.gallery img:hover{
+transform:scale(1.05);
+}
+.note{
+margin:20px;
+padding:20px;
+border-radius:20px;
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
+max-width:700px;
+}
+.countdown{
+font-size:2rem;
+margin-top:20px;
+}
+.secret{
+margin-top:20px;
+padding:15px 30px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+font-size:1rem;
+}
+.hidden{
+display:none;
+margin-top:20px;
+font-size:1.2rem;
+}
+video{
+width:80%;
+max-width:800px;
+border-radius:20px;
+margin-top:20px;
+}
+audio{
+margin-top:20px;
+}
+</style>
+</head>
+<body>
+<section class="red">
+<h1>❤️ Every Love Story Is Beautiful, But Ours Is My Favorite</h1>
+<p>
+This website isn't just a website.
+It's every thought I wanted to tell you,
+every memory I never wanted to forget,
+and every reason I still smile when I see your name.
+</p>
+<audio controls autoplay loop>
+<source src="your-song.mp3">
+</audio>
+</section>
+<section class="pink">
+<h1>💕 Falling For You</h1>
+<p>
+Somewhere between the conversations,
+the laughs,
+the random moments,
+and the memories,
+you became my favorite person.
+</p>
+<div class="gallery">
+![image alt](
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+</div>
+</section>
+<section class="gold">
+<h1>✨ My Favorite Memories</h1>
+<div class="note">
+Remember that day?
+I still think about it more than you'd expect.
+</div>
+<div class="note">
+Out of all the places I've been,
+my favorite place somehow became wherever you are.
+</div>
+<div class="note">
+You turned ordinary moments into memories.
+</div>
+<video controls>
+<source src="video1.mp4">
+</video>
+</section>
+<section class="purple">
+<h1>🌙 The Hard Days</h1>
+<p>
+Not every chapter was perfect.
+Some days were confusing.
+Some days hurt.
+Some days were difficult.
+
+But even then,
+I never stopped caring.
+And I never stopped choosing you.
+
+</p>
+<button class="secret" onclick="showSecret()">
+Click Me
+</button>
+<div id="secretMessage" class="hidden">
+❤️ Thank you for staying.
+</div>
+</section>
+<section class="blue">
+<h1>🌌 Through Everything</h1>
+<p>
+Even after every conversation,
+every misunderstanding,
+every good day,
+and every bad one...
+
+If I could go back and start over,
+I’d still choose you.
+Every single time.
+
+</p>
+</section>
+<section class="forever">
+<h1>🤍 Forever</h1>
+<p>
+Thank you for every memory.
+Thank you for every laugh.
+Thank you for every version of yourself.
+
+You will always be one of the most beautiful parts of my story.
+
+</p>
+<div class="countdown" id="countdown"></div>
+<h2 style="margin-top:40px;">
+I loved you yesterday.
+I love you today.
+I'll love you tomorrow.
+❤️
+</h2>
+</section>
+<script>
+function showSecret(){
+document.getElementById("secretMessage").style.display="block";
+}
+const targetDate = new Date("2026-06-21");
+setInterval(()=>{
+const now = new Date();
+const difference = targetDate - now;
+const days = Math.floor(difference/(1000*60*60*24));
+document.getElementById("countdown").innerHTML =
+days + " days until our next special day ❤️";
+},1000);
+</script>
+</body>
+</html>
